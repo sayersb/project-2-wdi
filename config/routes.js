@@ -14,4 +14,15 @@ router.route('/keyplayers')
   .post(keyplayersController.create);
 
 
+router.route('/keyplayers/new')
+  .get(keyplayersController.new);
+
+router.route('/keyplayers/:id')
+  .get(keyplayersController.show)
+  .put(keyplayersController.update)
+  .delete(keyplayersController.delete);
+
+router.route('/keyplayers/:id/edit')
+  .get(keyplayersController.edit);
+
 module.exports = router;

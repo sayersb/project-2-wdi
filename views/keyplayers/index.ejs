@@ -1,0 +1,25 @@
+<h1 class="title"><%= title %></h1>
+
+<div class="columns">
+  <% keyplayers.forEach( (keyplayer, key) => { %>
+    <div class="column is-one-third-desktop is-half-tablet">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="<%= keyplayer.image %>" alt="<%= keyplayer.name%>">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+              <h4 class="title is-4">
+              <a href="/keyplayers/<%= keyplayer._id %>">
+              <%= keyplayer.name %>
+              </a>
+              </h4>
+              <h6 class="subtitle is-6"><%= keyplayer.country %></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% }) %>
+</div>
