@@ -5,7 +5,7 @@ function botrIndex(req, res){
     .find()
     .exec()
     .then( botrs => {
-      res.render('botr/index', {
+      res.render('botrs/index', {
         title: 'Best of the Rest',
         botrs
       });
