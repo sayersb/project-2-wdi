@@ -3,6 +3,7 @@ const router = express.Router();
 
 const keyplayersController = require('../controllers/keyplayers');
 const toptensController = require('../controllers/toptens');
+const botrsController = require('../controllers/botrs');
 
 
 router.get('/', (req, res) => res.render('home', {
@@ -42,5 +43,20 @@ router.route('/toptens/:id')
 router.route('/toptens/:id/edit')
   .get(toptensController.edit);
 
+
+router.route('/botrs')
+  .get(botrsController.index)
+  .post(botrsController.create);
+
+router.route('/botrs/new')
+  .get(botrsController.new);
+
+router.route('/botrs/:id')
+  .get(botrsController.show)
+  .put(botrsController.update)
+  .delete(botrsController.delete);
+
+router.route('/botrs/:id/edit')
+  .get(botrsController.edit);
 
 module.exports = router;
