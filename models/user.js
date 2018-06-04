@@ -9,11 +9,11 @@ const userSchema = new mongoose.Schema({
   timestamps: true
 });
 
-userSchema.virtual('keyplayers', {
-  ref: 'keyPlayer',
-  foreignField: 'creator',
-  localField: '_id'
-});
+// userSchema.virtual('keyplayers', {
+//   ref: 'keyPlayer',
+//   foreignField: 'creator',
+//   localField: '_id'
+// });
 
 userSchema.methods.validatePassword = function(password){
   return bcrypt.compareSync(password, this.password);
@@ -39,3 +39,5 @@ userSchema.pre('validate', function(next){
   }
   next();
 });
+
+module.exports = mongoose.model('User', userSchema);

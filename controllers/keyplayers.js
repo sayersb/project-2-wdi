@@ -1,4 +1,4 @@
-const KeyPlayer = require('../models/keyplayer')
+const KeyPlayer = require('../models/keyplayer');
 
 function keyPlayersIndex(req, res){
   KeyPlayer
@@ -48,7 +48,7 @@ function keyPlayersUpdate(req, res){
     .update(req.body)
     .exec()
     .then( keyplayer => {
-      return res.redirect(`/keyplayers/${req.params.id}`);
+      return res.redirect(`/keyplayers/${keyplayer._id}`);
     });
 }
 

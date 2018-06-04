@@ -1,4 +1,4 @@
-const Topten = require('../models/topten')
+const Topten = require('../models/topten');
 
 function toptensIndex(req, res){
   Topten
@@ -47,7 +47,7 @@ function toptensUpdate(req, res){
     .update(req.body)
     .exec()
     .then(topten => {
-      return res.redirect(`/toptens/${req.params.id}`);
+      return res.redirect(`/toptens/${topten._id}`);
     });
 }
 

@@ -1,4 +1,4 @@
-const Botr = require('../models/botr')
+const Botr = require('../models/botr');
 
 function botrIndex(req, res){
   Botr
@@ -49,7 +49,7 @@ function botrUpdate(req, res){
     .update(req.body)
     .exec()
     .then(botr => {
-      return res.redirect(`/botrs/${req.params.id}`);
+      return res.redirect(`/botrs/${botr._id}`);
     });
 }
 

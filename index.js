@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
-const session = require('express-session')
+const session = require('express-session');
 
 const User = require('./models/user');
 const { port, dbURI } = require('./config/environment');
@@ -42,8 +42,8 @@ app.use(session({
 
 app.use((req, res, next) => {
   if(!req.session.userId) return next();
-  console.log('session middleware')
-  console.log(req.session)
+  console.log('session middleware');
+  console.log(req.session);
   User
     .findById(req.session.userId)
     .populate({path: 'keyplayers', populate: {path: 'creator'}})
@@ -84,4 +84,4 @@ app.use(router);
 // }));
 
 
-app.listen(4000, () => console.log('Express is listening on port 4000'));
+app.listen(port, () => console.log(`Express is listening on port ${port}`));
