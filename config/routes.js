@@ -1,14 +1,28 @@
 const express = require('express');
 const router = express.Router();
 
+const static = require('../controllers/static');
 const keyplayersController = require('../controllers/keyplayers');
 const toptensController = require('../controllers/toptens');
 const botrsController = require('../controllers/botrs');
-
+const registrations = require('../controllers/registrations');
+const sessions = require('../controllers/sessions');
 
 router.get('/', (req, res) => res.render('home', {
   isHomepage: true
 }));
+
+router.route('/register')
+  .get(registrations.new)
+  .post(registrations.create);
+
+router.route('/login')
+  .get(sessions.new)
+  .post(sessions.create);
+
+
+router.route('/logout')
+  .get(sessions.delete);
 
 
 router.route('/keyplayers')
