@@ -1,7 +1,7 @@
 <h2>Predictions</h2>
 <ul>
 
-
+<% if(locals.isLoggedIn){ %>
 <% results.forEach( result =>{ %>
   <li>
     <a href='/results/<%= result.id %>'> <%= result.winner %> </a>
@@ -12,6 +12,7 @@
   </li>
 <% }) %>
 </ul>
+<% } %>
 
 
 <% if(locals.isLoggedIn){ %>
