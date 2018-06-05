@@ -7,6 +7,7 @@ const toptensController = require('../controllers/toptens');
 const botrsController = require('../controllers/botrs');
 const registrations = require('../controllers/registrations');
 const sessions = require('../controllers/sessions');
+// const results = require('../controllers/results');
 
 router.get('/', (req, res) => res.render('home', {
   isHomepage: true
@@ -72,5 +73,21 @@ router.route('/botrs/:id')
 
 router.route('/botrs/:id/edit')
   .get(botrsController.edit);
+
+// router.route('/results')
+//   .get(results.index)
+//   .post(results.create);
+//
+// router.route('/results/new')
+//   .get(results.new);
+//
+// router.route('/results/:id')
+//   .get(results.show)
+//   .put(results.update)
+//   .delete(results.delete);
+//
+// router.route('/results/:id/edit')
+//   .get(pictures.edit);
+//
 
 module.exports = router;
