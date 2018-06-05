@@ -1,0 +1,59 @@
+<h2>Edit <%= result.winner %></h2>
+
+
+<form action="/results/<%= result.id %>" method="post">
+  <input type="hidden" name="_method" value="PUT">
+  <div class="field">
+    <label class="label">Winner </label>
+    <div class="control">
+      <input class="input" type="text" name="winner" value="<%= result.winner %>">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Runner-Up </label>
+    <div class="control">
+      <input class="input" type="text" name="second" value="<%= result.second %>">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Third Place </label>
+    <div class="control">
+      <input class="input" type="text" name="third" value="<%= result.third %>">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Fourth Place </label>
+    <div class="control">
+      <input class="input" type="text" name="fourth" value="<%= result.fourth %>">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Top Scorer </label>
+    <div class="control">
+      <input class="input" type="text" name="topScorer" value="<%= result.topScorer %>">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Player Of The Tournament </label>
+    <div class="control">
+      <input class="input" type="text" name="pott" value="<%= result.pott %>">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Winners Flag</label>
+    <div class="control">
+      <input class="input" type="text" name="image" value="<%= result.image %>">
+    </div>
+  </div>
+  
+  <div class="field is-grouped">
+
+    <div class="control">
+      <button class="button is-link">Submit</button>
+    </div>
+  </div>
+    <div class="control">
+      <button class="button is-text">Cancel</button>
+    </div>
+  </div>
+</form>

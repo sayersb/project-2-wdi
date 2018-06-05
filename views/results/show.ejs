@@ -1,0 +1,23 @@
+<h2><%= result.winner %></h2>
+
+<div class="columns">
+  <div class="column is-half">
+    <img src="<%= result.image %>" alt="<%= result.winner %>">
+  </div>
+  <div class="column is-half">
+    <ul>
+     <li>  Runner-Up  <%= result.second %> </li>
+     <li>  Third Place <%= result.third %> </li>
+     <li>  Fourth Place <%= result.fourth %> </li>
+     <li>  Top Scorer <%= result.topScorer %> </li>
+     <li>  Player Of The Tournament <%= result.pott %> </li>
+   </ul>
+   <a href="/results/<%= result.id %>/edit">Edit</a>
+   <form action="/results/<%= result.id %>/" method="post">
+     <input type="hidden" name="_method" value="DELETE">
+     <button name="button">DELETE</button>
+
+   </form>
+  </div>
+
+</div>

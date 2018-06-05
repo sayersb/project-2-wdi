@@ -21,10 +21,12 @@
         <% if(locals.isLoggedIn){%>
             <li>Hi <%= locals.user.username %></li>
             <li><a href="/logout"> Logout </a></li>
+            <li><a href="/results/new">Add your predictions</a> </li>
         <%} else {%>
             <li><a href="/login"> Login </a></li>
             <li><a href="/register"> Sign up </a></li>
         <% } %>
+        <li><a href="/results">Predictions</a> </li>
       </ul>
     </div>
   </div>
