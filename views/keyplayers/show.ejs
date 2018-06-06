@@ -1,20 +1,19 @@
-<h2><%= keyplayer.name %></h2>
-
 <div class="columns">
   <div class="column is-half">
-    <img src="<%= keyplayer.image %>" alt="<%= keyplayer.name %>">
+    <img  class="info" src="<%= keyplayer.image %>" alt="<%= keyplayer.name %>">
   </div>
   <div class="column is-half">
     <ul>
-     <li>  Country <%= keyplayer.country %> </li>
-     <li>  Caps <%= keyplayer.caps %> </li>
-     <li>  Goals <%= keyplayer.goals %> </li>
-     <li>  Club <%= keyplayer.club %> </li>
+     <li class="info">  Name  :  <%= keyplayer.name %> </li>
+     <li>  Country  :   <%= keyplayer.country %> </li>
+     <li>  Caps   : <%= keyplayer.caps %> </li>
+     <li>  Goals  :  <%= keyplayer.goals %> </li>
+     <li>  Club   : <%= keyplayer.club %> </li>
    </ul>
    <a href="/keyplayers/<%= keyplayer.id %>/edit">Edit</a>
    <form action="/keyplayers/<%= keyplayer.id %>/" method="post">
      <input type="hidden" name="_method" value="DELETE">
-      <button class="button is-danger is-rounded">DELETE</button>
+      <button class="button is-danger is-rounded is-outlined">DELETE</button>
 
    </form>
   </div>
