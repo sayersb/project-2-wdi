@@ -6,7 +6,7 @@ function keyPlayersIndex(req, res){
     .exec()
     .then( keyplayers => {
       res.render('keyplayers/index', {
-        title: 'All the key players',
+        title: 'Key Players',
         keyplayers
       });
     });
