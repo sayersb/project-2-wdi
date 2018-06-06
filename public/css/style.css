@@ -7,3 +7,16 @@ body {
 .info {
    margin-top: 60px;
 }
+
+.prediction {
+  font-weight: bold;
+  margin-left:15%;
+}
+
+.title {
+  color:white;
+}
+
+.sign-up{
+  color:white;
+}
