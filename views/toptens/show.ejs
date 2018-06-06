@@ -1,11 +1,10 @@
-<h2><%= topten.country %></h2>
-
 <div class="columns">
   <div class="column is-half">
-    <img src="<%= topten.image %>" alt="<%= topten.country %>">
+    <img  class ="info" src="<%= topten.image %>" alt="<%= topten.country %>">
   </div>
   <div class="column is-half">
     <ul>
+      <li class="info">  Country  :  <%= topten.country %>  </li>
      <li>  Ranking :  <%= topten.ranking %> </li>
      <li>  History :  <%= topten.history %> </li>
      <li>  Odds :  <%= topten.odds %> </li>
@@ -14,7 +13,7 @@
    <a href="/toptens/<%= topten.id %>/edit">Edit</a>
    <form action="/toptens/<%= topten.id %>/" method="post">
      <input type="hidden" name="_method" value="DELETE">
-     <button name="button">DELETE</button>
+     <button class="button is-danger is-rounded">DELETE</button>
 
    </form>
   </div>
