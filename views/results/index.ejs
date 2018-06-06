@@ -1,14 +1,17 @@
-<h2>Predictions</h2>
+<h1 style="color:gold;">Predictions</h1>
 <ul>
 
 <% if(locals.isLoggedIn){ %>
 <% results.forEach( result =>{ %>
-  <li>
-    <a href='/results/<%= result.id %>'> <%= result.winner %> </a>
-    <img style="max-width: 200px; margin-top: 10px;" src='<%= result.image %>' alt='<%= result.winner %>' />
+<li>
+    <div>  <a href='/results/<%= result.id %>' style="color:white;"> Winner :  <%= result.winner %> </a> </div>
+    <div>  <a href='/results/<%= result.id %>' style="color:white;"> Runner-Up :  <%= result.second %> </a> </div>
+    <div>  <a href='/results/<%= result.id %>'  style="color:white;"> Top Scorer :  <%= result.topScorer %> </a> </div>
+    <img style="max-width: 220px; margin-top: 12px; margin-bottom: 12px;" src='<%= result.image %>' alt='<%= result.winner %>' />
     <% if(result.creator){%>
-      <%= result.creator.username %>
+    <a style="color:white;">  <%= result.creator.username %> </a>
   <%  } %>
+
   </li>
 <% }) %>
 </ul>
@@ -16,14 +19,13 @@
 
 
 <% if(locals.isLoggedIn){ %>
-<h2>My Predictions</h2>
+<h2 style="color:gold;">My Predictions</h2>
 <%= locals.user.result %>
 <ul>
 
 <% locals.user &&  locals.user.results && locals.user.results.forEach( result =>{ %>
   <li>
-    <%= result.winner %>
-    <img style="max-width: 200px" src='<%= result.image %>' alt='<%= result.winner %>' />
+    <img style="max-width: 200px; margin-top:12px; margin-bottom: 12px;" src='<%= result.image %>' alt='<%= result.winner %>' />
     <% if(result.creator){%>
       <%= result.creator.username %>
   <%  } %>

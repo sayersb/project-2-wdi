@@ -6,10 +6,10 @@
   </div>
   <div class="column is-half">
     <ul>
-     <li>  ranking <%= topten.ranking %> </li>
-     <li>  history <%= topten.history %> </li>
-     <li>  odds <%= topten.odds %> </li>
-     <li>  stars <%= topten.stars %> </li>
+     <li>  Ranking :  <%= topten.ranking %> </li>
+     <li>  History :  <%= topten.history %> </li>
+     <li>  Odds :  <%= topten.odds %> </li>
+     <li>  Stars : <%= topten.stars %> </li>
    </ul>
    <a href="/toptens/<%= topten.id %>/edit">Edit</a>
    <form action="/toptens/<%= topten.id %>/" method="post">
