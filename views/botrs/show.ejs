@@ -1,15 +1,15 @@
-<h2><%= botr.country %></h2>
 
 <div class="columns">
   <div class="column is-half">
-    <img src="<%= botr.image %>" alt="<%= botr.country %>">
+    <img class="info" src="<%= botr.image %>" alt="<%= botr.country %>">
   </div>
   <div class="column is-half">
     <ul>
-     <li>  Ranking <%= botr.ranking %> </li>
-     <li>  History <%= botr.history %> </li>
-     <li>  Odds <%= botr.odds %> </li>
-     <li>  Stars <%= botr.stars %> </li>
+     <li class="info">  Country  :  <%= botr.country %>  </li>
+     <li>  Fifa Ranking  :  <%= botr.ranking %> </li>
+     <li>  History  :   <%= botr.history %> </li>
+     <li>  Odds  :  <%= botr.odds %> </li>
+     <li>  Stars  :   <%= botr.stars %> </li>
    </ul>
    <a href="/botrs/<%= botr.id %>/edit">Edit</a>
    <form action="/botrs/<%= botr.id %>/" method="post">
