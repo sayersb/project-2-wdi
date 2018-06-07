@@ -15,8 +15,8 @@
 
 
   <div class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
+    <div class="top-bar-right">
+      <ul class="dropdown menu" data-dropdown-menu style="background-color:#d9d9d9">
         <% if(locals.isLoggedIn){%>
             <li>Hi <%= locals.user.username %></li>
             <li><a href="/logout"> Logout </a></li>
