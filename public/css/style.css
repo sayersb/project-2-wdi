@@ -28,3 +28,9 @@ body {
 h2{
   color:white;
 }
+
+.footer {
+  background-color:black;
+  color:gold;
+  text-align:center;
+}

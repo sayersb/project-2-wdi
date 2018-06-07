@@ -6,7 +6,7 @@ function toptensIndex(req, res){
     .exec()
     .then( toptens => {
       res.render('toptens/index', {
-        title: 'Top 10 Teams',
+        title: 'Top 10 info',
         toptens
       });
     });
