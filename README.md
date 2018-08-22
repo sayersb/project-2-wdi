@@ -15,4 +15,4 @@ A full-stack Node App that includes information on key players and countries for
 | Session Authentication | bcrypt     |    body-parser |
 
 
-The application has been deployed on ##### [Visit website](https://worldcuppredictor.herokuapp.com/)
+The application has been deployed on [Heroku](https://worldcuppredictor.herokuapp.com/)
