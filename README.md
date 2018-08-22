@@ -27,9 +27,18 @@ The other idea was to just ask users who they thought would win the group, win t
 
 When I started writing the code for the project I had a clear idea about the models needed, which would be the user, the top ten ranked countries and the key players set to appear at the competition. I set up the app with Yarn, Express, EJS layouts, Node.js and MongoDB for the data, then planned my routes and cards to perform the CRUD actions on. After writing out my models it was apparent that a final model needed to be added (a 'best of the rest' to showcase some remaining countries as I discovered that England were somehow currently not amongst the elite according to Fifa rankings). At this stage I had reached the MVP that I set out in planning (being able to perform CRUD operations on the cards that showcased the players and countries information).
 
-The registration, login and authentication was then implemented using express-sessions. This meant that users were only allowed to make predictions and see other users predictions once logged in. At this point the product was at the level where I just needed to fix some small bugs and sort the styling (which didn't take too long as Bulma had been implemented). On the final day the app was deployed using GitHub and Heroku.
+The registration, login and authentication was then implemented using express-sessions. This meant that users were only allowed to make predictions and see other users predictions once logged in. At this point the product was at the level where I just needed to fix some small bugs and sort the styling, which despite using Bulma took longer than expected due to all the pages now used. On the final day the app was deployed using GitHub and Heroku.
 
 ## Issues
+
+⋅⋅* Due to not knowing properly about seeds all of the time that I had spent inputting data for the players and countries was essentially wasted due to all of this data being lost when deployed on Heroku
+
+⋅⋅* Due to
+
+
+
+
+
 
 
 
