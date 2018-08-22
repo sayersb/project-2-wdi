@@ -15,5 +15,6 @@ A full-stack Node App that includes information on key players and countries for
 | Session Authentication | bcrypt     |    body-parser |
 
 
-The application has been deployed on [Heroku](https://worldcuppredictor.herokuapp.com/)
+The application has been deployed on [Heroku](https://worldcuppredictor.herokuapp.com/) .
+
 *Please be aware that Heroku apps go to sleep after 30 mins of inactivity and may take a little time to load*
