@@ -31,9 +31,15 @@ The registration, login and authentication was then implemented using express-se
 
 ## Issues
 
-  * Due to not knowing properly about seeds all of the time that I had spent inputting data for the players and countries was essentially wasted due to all of this data being lost when deployed on Heroku
+  * Due to not knowing properly about seeds all of the time that I had spent inputting data for the players and countries was essentially wasted due to all of this data being lost when deployed on Heroku. 
 
-  * Due to
+##  Other GA Project Repositories
+
+  * 1st: [Chain Game](https://github.com/sayersb/project-1-wdi)
+
+  * 2nd: Hidden Gems App https://github.com/sayersb/WDI34_PROJECT_3
+
+  * 3rd: ABC Events App https://github.com/sayersb/WDI-PROJECT-4
 
 
 
