@@ -7,3 +7,11 @@
 A full-stack Node App that includes information on players and countries for the 2018 Fifa World Cup, leading to predictions being made by users (that are visible once logged in). 
 
 
+
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
