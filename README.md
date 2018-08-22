@@ -9,9 +9,8 @@ A full-stack Node App that includes information on players and countries for the
 
 
 
-| Technologies used :                   |
+
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
-
