@@ -37,9 +37,9 @@ The registration, login and authentication was then implemented using express-se
 
   * 1st: [Chain Game](https://github.com/sayersb/project-1-wdi)
 
-  * 2nd: Hidden Gems App https://github.com/sayersb/WDI34_PROJECT_3
+  * 3rd: [Hidden Gems App](https://github.com/sayersb/WDI34_PROJECT_3)
 
-  * 3rd: ABC Events App https://github.com/sayersb/WDI-PROJECT-4
+  * 4th: [ABC Events App](https://github.com/sayersb/WDI-PROJECT-4)
 
 
 
