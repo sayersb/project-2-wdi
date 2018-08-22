@@ -31,9 +31,9 @@ The registration, login and authentication was then implemented using express-se
 
 ## Issues
 
-⋅⋅* Due to not knowing properly about seeds all of the time that I had spent inputting data for the players and countries was essentially wasted due to all of this data being lost when deployed on Heroku
+  * Due to not knowing properly about seeds all of the time that I had spent inputting data for the players and countries was essentially wasted due to all of this data being lost when deployed on Heroku
 
-⋅⋅* Due to
+  * Due to
 
 
 
