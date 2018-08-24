@@ -2,6 +2,8 @@
 
 ![image](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
+https://github.com/sayersb/project-2-wdi/blob/master/worldcup1.gif?raw=true
+
 ## Intro
 
 A full-stack Node App that includes information on key players and countries for the 2018 Fifa World Cup, leading to predictions being made by users (that are visible once logged in). We were given 6 days to devise an idea and build the application, utilising at least two models, user authentication, RESTful routes and a persistent database. This was my first full stack app, built with Express.js and Node.js amongst the other technologies shown in the table below : 
