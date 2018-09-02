@@ -27,15 +27,31 @@ After receiving the brief for a full stack RESTful app, and with the 2018 World 
 
 The other idea was to just ask users who they thought would win the group, win the competition and win the golden boot, amongst other questions to be thought of later. I planned to then use the results collected from the users data (with MongoDB) to show the consensus for the winners of the questions asked. This idea seemed more enjoyable for the user, as well as the coding on my part due to the extra models needed, so I decided to take this route.
 
-When I started writing the code for the project I had a clear idea about the models needed, which would be the user, the top ten ranked countries and the key players set to appear at the competition. I set up the app with Yarn, Express, EJS layouts, Node.js and MongoDB for the data, then planned my routes and cards to perform the CRUD actions on. After writing out my models it was apparent that a final model needed to be added (a 'best of the rest' to showcase some remaining countries as I discovered that England were somehow currently not amongst the elite according to Fifa rankings). At this stage I had reached the MVP that I set out in planning (being able to perform CRUD operations on the cards that showcased the players and countries information).
+When I started writing the code for the project I had a clear idea about the models needed, which would be the user, the top ten ranked countries and the key players set to appear at the competition. Part of the User model can be seen in the image below, aswell as the MVC (Model, View and Controller) framework implemented :
 
-The registration, login and authentication was then implemented using express-sessions. This meant that users were only allowed to make predictions and see other users predictions once logged in. At this point the product was at the level where I just needed to fix some small bugs and sort the styling, which despite using Bulma took longer than expected due to all the pages now used. On the final day the app was deployed using GitHub and Heroku.
+![image](https://github.com/sayersb/project-2-wdi/blob/master/User%20Model.png?raw=true)
+
+
+I set up the app with Yarn, Express, EJS layouts, Node.js and MongoDB for the data, then planned my routes and cards to perform the CRUD actions on. This was my first full stack app, with the environment and routes pages partially shown in the image below : 
+
+![image](https://github.com/sayersb/project-2-wdi/blob/master/Environment:routes.png?raw=true)
+
+
+After writing out my models it was apparent that a final model needed to be added (a 'best of the rest' to showcase some remaining countries as I discovered that England were somehow currently not amongst the elite according to Fifa rankings). At this stage I had reached the MVP that I set out in planning (being able to perform CRUD operations on the cards that showcased the players and countries information).
+
+The registration, login and authentication was then implemented using express-sessions. This meant that users were only allowed to make predictions and see other users predictions once logged in. Part of the session authentication controller can be seen in the image below : 
+
+![image](https://github.com/sayersb/project-2-wdi/blob/master/Session%20Authentication.png?raw=true)
+
+
+At this point the product was at the level where I just needed to fix some small bugs and sort the styling, which despite using Bulma took longer than expected due to all the pages now used. On the final day the app was deployed using GitHub and Heroku.
 
 ## Issues
 
   * Due to not knowing properly about seeds all of the time that I had spent inputting data for the players and countries was essentially wasted due to all of this data being lost when deployed on Heroku. 
   
   * I learnt that moving forward I needed to leave a bit more time for styling at the end of the project when creating a multi page app.
+  
 
 ##  Other GA Project Repositories
 
